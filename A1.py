@@ -161,7 +161,6 @@ def stmts(tokens):
         return nodes + stmts(tokens)
     return[]
 
-#Arreglar esta wea
 def expr(tokens, childNode):
     if tokens.peek()['type'] == 'plus' or tokens.peek()['type'] == 'minus':
         node = Node(tokens.advance()['type'])
